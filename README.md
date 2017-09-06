@@ -6,7 +6,7 @@ ManiaModUpdater allows you to make your mods auto-updatable by simply adding one
 
 How to make your mod compatible with ManiaModUpdater:
 - Add these lines to your existing mod.ini file so it looks like this (don't forget to remove the "()", since between that are only
-commentaries and may render ManiaModUpdater unusable with your mod:
+commentaries and may render ManiaModUpdater unusable with your mod (in the end it should look like this https://goo.gl/1HCcnF):
 ```
   [AUTO_UPDATER]
 
