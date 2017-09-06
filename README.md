@@ -35,3 +35,5 @@ IsEnableDebug=false
 ```
 
 - Your mod should now be ready to use and detectable by ManiaModUpdater!
+
+> If you have any questions, tweet @PTKickass for help how to setup your own mod
