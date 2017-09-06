@@ -30,6 +30,7 @@ set "download="
 for /F "skip=1 delims=" %%3 in (_modupdater/ManiaModUpdater.config) do if not defined download set "download=%%3"
 
 if /I "%install%" LSS "%download%" (goto mmupd_update)
+goto begin
 
 :mmupd_update
 cls
