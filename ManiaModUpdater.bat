@@ -281,6 +281,7 @@ echo By PTKickass
 echo ------------------------------------------
 echo You already have the latest version installed
 echo Going back to the Main Menu...
+RD /s /q temp
 timeout /t 2 /nobreak>nul
 goto begin
 
