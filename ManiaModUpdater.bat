@@ -31,7 +31,125 @@ for /F "skip=1 delims=" %%3 in (_modupdater/ManiaModUpdater.config) do if not de
 
 if /I "%install%" LSS "%download%" (goto mmupd_update)
 
+:mmupd_update
+cls
+echo ManiaModUpdater has a new update!
+echo.
+echo Would you like to download and install the update?
+set /p mmupd_update=(Y/N)
+if /I %mmupd_update% EQU Y (goto mmupd_update_yes)
+if /I %mmupd_update% EQU N (goto begin)
+goto :mmupd_update
+
+:mmupd_update_yes
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 0%
+echo ²²²²²²²²²²²²²²²²²²²²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+
+md "_modupdater\update"
+setLocal EnableDelayedExpansion
+
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 5%
+echo Û²²²²²²²²²²²²²²²²²²²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/ManiaModUpdater/blob/master/ManiaModUpdater.zip', '_modupdater/update/update.zip')"
+
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 40%
+echo ÛÛÛÛ²²²²²²²²²²²²²²²²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/ManiaModUpdater/blob/master/Dependencies/7z.exe?raw=true', '_modupdater/update/7z.exe')"
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 60%
+echo ÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²²²²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+
+md "_modupdater\update\extract"
+cls
+
+
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 80%
+echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+
+temp\update\7z.exe x "_modupdater\update\update.zip" -o"_modupdater\update\extract" -y>nul
+
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 95%
+echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+
+xcopy /s /y /h "_modupdater\update\extract" .\
+
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Progress 100%
+echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo ------------------------------------------
+echo Updating ManiaModUpdater...
+echo This may take a while, please wait...
+
+RD /S /Q _modupdater
+timeout /t 2 /nobreak>nul
+
+cls
+echo Sonic Mania Mod Updater v1.0
+echo By PTKickass
+echo ------------------------------------------
+echo Update finished!
+echo ManiaModInstaller will now close. Press any key and please re-open the tool.
+pause>nul
+goto end
+
+::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 :begin
+RD /S /Q _modupdater
 cls
 cd Mods
 cls
@@ -255,7 +373,7 @@ echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
 
-powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/PTKModsServer/blob/master/Mania/ZaWarudo/1.0/7z.exe?raw=true', 'temp/update/7z.exe')"
+powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/ManiaModUpdater/blob/master/Dependencies/7z.exe?raw=true', 'temp/update/7z.exe')"
 
 cls
 echo Sonic Mania Mod Updater v1.0
@@ -310,6 +428,7 @@ echo Updating "%currentmod%"...
 echo This may take a while, please wait...
 
 RD /S /Q temp
+timeout /t 2 /nobreak>nul
 
 cls
 echo Sonic Mania Mod Updater v1.0
