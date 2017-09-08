@@ -1,4 +1,4 @@
-@echo off
+@echo on
 ::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 set color=color
 set not_support=not_support
@@ -15,11 +15,12 @@ if %errorlevel% EQU 0 (set color=no)
 find /i "IsSkipSupportCheck=True" ManiaModUpdater.config
 if %errorlevel% EQU 0 (set not_support=updater)
 
-find /i "IsUpdateTool=false" ManiaModUpdater.config
+find /i "IsSkipToolUpdater=true" ManiaModUpdater.config
 if %errorlevel% EQU 0 (goto begin)
 
 find /i "IsDebugEnable=true" ManiaModUpdater.config
 if %errorlevel% EQU 0 (set updater=debug_menu)
+
 
 cls
 md _modupdater
@@ -42,6 +43,34 @@ goto begin
 :mmupd_update
 cls
 echo ManiaModUpdater has a new update!
+echo.
+echo Getting Changelog...
+
+for /F "skip=5 delims=" %%6 in (ManiaModUpdater.config) do if not defined mmi_change set "mmi_change=%%6"
+powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('%mmi_change%', '_modupdater/changelog.log')"
+if exist "_modupdater/changelog.log" (goto mmiupd_ready_changes)
+goto mmiupd_ready_nochanges
+
+
+:mmuupd_update
+cls
+echo ManiaModUpdater has a new update!
+echo.
+echo Changelog:
+type "_modupdater\changelog.log"
+echo.
+echo Would you like to download and install the update?
+set /p mmupd_update=(Y/N)
+if /I %mmupd_update% EQU Y (goto mmupd_update_yes)
+if /I %mmupd_update% EQU N (goto begin)
+goto :mmupd_update
+
+
+:mmiupd_ready_nochanges
+cls
+echo ManiaModUpdater has a new update!
+echo.
+echo No Changelog available
 echo.
 echo Would you like to download and install the update?
 set /p mmupd_update=(Y/N)
@@ -454,3 +483,5 @@ goto begin
 :: Restores PATH
 :: NOTE: This doesn't seem to work after the script ends
 path %oldPATH%
+
+pause
