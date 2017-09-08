@@ -26,6 +26,9 @@ cls
 md _modupdater
 attrib +h _modupdater
 cls
+echo Sonic Mania Mod Updater v1.3
+echo By PTKickass
+echo ------------------------------------------
 echo Checking for updates...
 
 for /F "skip=3 delims=" %%1 in (ManiaModUpdater.config) do if not defined mmupd set "mmupd=%%1"
@@ -42,6 +45,9 @@ goto begin
 
 :mmupd_update
 cls
+echo Sonic Mania Mod Updater v1.3
+echo By PTKickass
+echo ------------------------------------------
 echo ManiaModUpdater has a new update!
 echo.
 echo Getting Changelog...
@@ -54,6 +60,9 @@ goto mmiupd_ready_nochanges
 
 :mmuupd_update
 cls
+echo Sonic Mania Mod Updater v1.3
+echo By PTKickass
+echo ------------------------------------------
 echo ManiaModUpdater has a new update!
 echo.
 echo Changelog:
@@ -68,6 +77,9 @@ goto :mmupd_update
 
 :mmiupd_ready_nochanges
 cls
+echo Sonic Mania Mod Updater v1.3
+echo By PTKickass
+echo ------------------------------------------
 echo ManiaModUpdater has a new update!
 echo.
 echo No Changelog available
@@ -80,7 +92,7 @@ goto :mmupd_update
 
 :mmupd_update_yes
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 0%
@@ -95,7 +107,7 @@ setLocal EnableDelayedExpansion
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 5%
@@ -108,7 +120,7 @@ powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https:/
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 40%
@@ -120,7 +132,7 @@ echo This may take a while, please wait...
 powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/ManiaModUpdater/blob/master/Dependencies/7z.exe?raw=true', '_modupdater/update/7z.exe')"
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 60%
@@ -134,7 +146,7 @@ md "_modupdater\update\extract"
 cls
 
 
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 80%
@@ -148,7 +160,7 @@ _modupdater\update\7z.exe x "_modupdater\update\update.zip" -o"_modupdater\updat
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 95%
@@ -162,7 +174,7 @@ xcopy /s /y /h "_modupdater\update\extract" .\
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 100%
@@ -175,7 +187,7 @@ RD /S /Q _modupdater
 timeout /t 2 /nobreak>nul
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Update finished!
@@ -191,7 +203,7 @@ cls
 cd Mods
 cls
 %color% 7
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo 		Main Menu
@@ -293,7 +305,7 @@ RD /S /Q temp
 md temp
 attrib +h temp
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Checking update availability for "%currentmod%"
@@ -312,7 +324,7 @@ for /F "skip=3 delims=" %%d in (temp\mod.ini) do if not defined download set "do
 if /I "%install%" LSS "%download%" (goto update_ready_getchanges)
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo You already have the latest version installed
@@ -325,7 +337,7 @@ goto begin
 :update_ready_getchanges
 del /q temp\changelog.log
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Update available!
@@ -338,7 +350,7 @@ goto update_ready_nochanges
 
 :update_ready_changes
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Update available!
@@ -354,7 +366,7 @@ goto update_ready_changes
 
 :update_ready_nochanges
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Update available!
@@ -372,7 +384,7 @@ goto update_ready_nochanges
 RD /S /Q "temp/update"
 RD /S /Q "temp/update/extract"
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 0%
@@ -387,7 +399,7 @@ setLocal EnableDelayedExpansion
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 5%
@@ -402,7 +414,7 @@ powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('%updser
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 40%
@@ -414,7 +426,7 @@ echo This may take a while, please wait...
 powershell "($WebClient = New-Object System.Net.WebClient).DownloadFile('https://github.com/PTKickass/ManiaModUpdater/blob/master/Dependencies/7z.exe?raw=true', 'temp/update/7z.exe')"
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 60%
@@ -428,7 +440,7 @@ md "temp\update\extract"
 cls
 
 
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 80%
@@ -442,7 +454,7 @@ temp\update\7z.exe x "temp\update\update.zip" -o"temp\update\extract" -y>nul
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 95%
@@ -456,7 +468,7 @@ xcopy /s /y /h "temp\update\extract" .\
 
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 100%
@@ -469,7 +481,7 @@ RD /S /Q temp
 timeout /t 2 /nobreak>nul
 
 cls
-echo Sonic Mania Mod Updater v1.2
+echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Update finished!
