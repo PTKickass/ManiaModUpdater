@@ -30,7 +30,7 @@ commentaries and may render ManiaModUpdater unusable with your mod (in the end i
 [THIS FILE IS USED FOR UPDATE SUPPORT DETECTION AND FOR DEBUGGING PURPOSES]
 [DO NOT DELETE]
 
-IsUpdaterSupport=false
+IsUpdaterSupport=true
 IsEnableDebug=false
 ```
 
