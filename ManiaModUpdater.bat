@@ -4,6 +4,10 @@ set color=color
 set not_support=not_support
 set updater=updater
 
+::Backs up and Removes DevkitPro from PATH
+set oldPATH=%PATH%
+path %oldPATH:c:\devkitPro\msys\bin;=% >nul
+
 setLocal EnableDelayedExpansion
 find /i "IsEnableColours=false" ManiaModUpdater.config
 if %errorlevel% EQU 0 (set color=no)
@@ -447,3 +451,6 @@ goto begin
 
 :end
 
+:: Restores PATH
+:: NOTE: This doesn't seem to work after the script ends
+path %oldPATH%
