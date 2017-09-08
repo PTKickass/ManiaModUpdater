@@ -145,7 +145,7 @@ echo This may take a while, please wait...
 md "_modupdater\update\extract"
 cls
 
-
+cls
 echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
@@ -170,7 +170,7 @@ echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
 
 
-xcopy /s /y /h "_modupdater\update\extract" .\
+xcopy /s /y /h "_modupdater\update\extract" .\>nul
 
 
 cls
