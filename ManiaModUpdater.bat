@@ -96,7 +96,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 0%
-echo ²²²²²²²²²²²²²²²²²²²²
+echo Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -111,7 +111,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 5%
-echo Û²²²²²²²²²²²²²²²²²²²
+echo Ã›Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -124,7 +124,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 40%
-echo ÛÛÛÛ²²²²²²²²²²²²²²²²
+echo Ã›Ã›Ã›Ã›Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -136,7 +136,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 60%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²²²²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -150,7 +150,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 80%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -164,7 +164,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 95%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -178,7 +178,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 100%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 echo ------------------------------------------
 echo Updating ManiaModUpdater...
 echo This may take a while, please wait...
@@ -388,7 +388,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 0%
-echo ²²²²²²²²²²²²²²²²²²²²
+echo Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -403,7 +403,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 5%
-echo Û²²²²²²²²²²²²²²²²²²²
+echo Ã›Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -418,7 +418,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 40%
-echo ÛÛÛÛ²²²²²²²²²²²²²²²²
+echo Ã›Ã›Ã›Ã›Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -430,7 +430,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 60%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²²²²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²Â²Â²Â²Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -444,7 +444,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 80%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²Â²Â²Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -458,7 +458,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 95%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Â²
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -472,7 +472,7 @@ echo Sonic Mania Mod Updater v1.3
 echo By PTKickass
 echo ------------------------------------------
 echo Progress 100%
-echo ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+echo Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›
 echo ------------------------------------------
 echo Updating "%currentmod%"...
 echo This may take a while, please wait...
@@ -495,5 +495,3 @@ goto begin
 :: Restores PATH
 :: NOTE: This doesn't seem to work after the script ends
 path %oldPATH%
-
-pause
